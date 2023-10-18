@@ -17,8 +17,10 @@ function App() {
       <ul>  
       { items.map((item)=> (
         <li key = {item.id}>
-          {item.name}
-         </li>
+          {item.name}<br />
+          {item.detail}<br />
+          <img src ={item.coverimage} alt={item.name}/>
+        </li>
       ))}
       </ul>
     </div>
